@@ -1,0 +1,26 @@
+evaluation:
+  metrics:
+    - bleu
+    - cultural_preservation
+    - dialectal_accuracy
+    - coherence
+    
+  cultural:
+    pattern_threshold: 0.7
+    element_threshold: 0.6
+    
+  dialect:
+    confidence_threshold: 0.8
+    min_agreement: 0.7
+    
+  human:
+    num_annotators: 50
+    min_agreement: 0.7
+    aspects:
+      - cultural_authenticity
+      - narrative_coherence
+      - dialectal_accuracy
+    
+  sampling:
+    num_samples: 1000
+    temperature: 0.7
