@@ -32,6 +32,15 @@ pip install -e .
 # Download MADAR corpus
 python scripts/download_data.py
 
+# Download all datasets
+python scripts/download_data.py
+
+# Download specific dataset
+python scripts/download_data.py --dataset madar
+
+# Force redownload
+python scripts/download_data.py --force
+
 # Preprocess data
 python scripts/preprocess_data.py
 
